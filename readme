@@ -1,0 +1,32 @@
+# Network Monitoring Dashboard
+
+This Laravel project allows you to:
+- Run a real-time internet speed test
+- View simulated network traffic stats
+- Load a dashboard for monitoring
+
+## Features
+- Speed test using Python's speedtest-cli
+- Traffic stats (simulated or SNMP-based)
+- JSON API responses
+- Clean Laravel controller logic
+
+## Installation
+
+1. Clone the repo
+2. Run `composer install`
+3. Set up `.env` and run `php artisan serve`
+4. Ensure Python and speedtest-cli are installed
+
+## Routes
+
+| Route            | Description              |
+|------------------|--------------------------|
+| `/`              | Dashboard page           |
+| `/speed-test`    | Run internet speed test  |
+| `/traffic-stats` | Get traffic statistics   |
+
+## Requirements
+- PHP 8.2
+- Laravel 12
+- Python with `speedtest-cli`
